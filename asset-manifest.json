@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/word-manipulator/static/css/main.abd64e84.css",
+    "main.js": "/word-manipulator/static/js/main.c3f3691b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/word-manipulator/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/word-manipulator/index.html",
+    "main.abd64e84.css.map": "/word-manipulator/static/css/main.abd64e84.css.map",
+    "main.c3f3691b.js.map": "/word-manipulator/static/js/main.c3f3691b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/word-manipulator/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.c3f3691b.js"
+  ]
+}
