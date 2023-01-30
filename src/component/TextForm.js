@@ -9,7 +9,7 @@ export default function TextForm(props) {
         console.log("Submit button clicked")
         let values= document.querySelector('#mybox').value;
         if(values === ''){
-          props.showAlert("Enter Something","danger")
+          props.showAlert("Enter Something!","danger")
         }
         setText(values.toUpperCase())
         
@@ -29,7 +29,7 @@ export default function TextForm(props) {
 </div>
 <button type="button" className="btn btn-primary" onClick={handleClick}>Submit</button>
 
-<p id="count" className={`text-${props.mode === 'light'?'dark':'light'}`}> Character count is {text.split(" ").join("").length}</p>
+<p id="count" className={`my-3 text-${props.mode === 'light'?'dark':'light'}`}> Character count is {text.split(" ").join("").length}</p>
 <p id="word" className={`text-${props.mode === 'light'?'dark':'light'}`}> Words is {text===""?"0":text.split(" ").length}</p>
 
 </div>

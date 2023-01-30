@@ -8,7 +8,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  HashRouter,
 } from "react-router-dom";
 
 function App() {
@@ -46,7 +46,7 @@ if(mode === 'light'){
 
   return (
     <>
-    <Router>
+    <HashRouter>
       
     
 
@@ -62,7 +62,7 @@ if(mode === 'light'){
   </Routes>
 
 </div>
-</Router>
+</HashRouter>
 </>
     
   );

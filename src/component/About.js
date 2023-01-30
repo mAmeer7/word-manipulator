@@ -4,6 +4,7 @@ export default function About(props) {
   return (
     
     <div className='container pt-5'>
+      <h2 className={`text-${props.mode==='light'?'dark':'light'}`}>Your FAQs</h2>
 <div className="accordion" id="accordionExample">
   <div className="accordion-item">
     <h2 className="accordion-header" id="headingOne">
@@ -37,7 +38,7 @@ export default function About(props) {
     </h2>
     <div id="collapseThree" className={`accordion-collapse collapse`} aria-labelledby="headingThree" data-bs-parent="#accordionExample" >
       <div className={`accordion-body bg-${props.mode} text-${props.mode === 'light'?'dark':'light'} `}>
-      I learned how to install react using NPM, as well as the bundles and relationships of src, public, node modules, package.json, and many other things. The most significant thing I learnt was how to use props, states, and react routing dom.
+      I learned how to install react using NPM, as well as the bundles and relationships of src, public, node modules, package.json, and many other things. The most significant thing I learnt was concept to use props, states, and react routing dom. Since it was my first framework project, I ran into problems while deploying. For instance, links and page functionality were broken on the github pages. Finally, after hours of work, I found out the solutions on my own, and I am pleased.
       </div>
     </div>
   </div>
