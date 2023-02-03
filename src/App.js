@@ -5,11 +5,11 @@ import TextForm from './component/TextForm';
 import React, { useState } from 'react'
 import Alert from './component/Alert';
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
   HashRouter,
 } from "react-router-dom";
+import Footer from './Footer';
 
 function App() {
   const [mode, setMode]=useState('light');
@@ -52,16 +52,13 @@ if(mode === 'light'){
 
     <Navbar mode={mode} darkmode={darkmode}/>   {/*  darkmode is function */}
     <Alert alertp={alert}/>
-<div className="container-sm pt-5" >
+<div className="container-sm pt-5" style={{"height":"95vh"}} >
   <Routes>
   <Route exact path="/" element={<TextForm mode={mode} showAlert={showAlert}/>}/>
   <Route exact path="/about" element={<About mode={mode}/>}/>
-          
-          
-          
   </Routes>
-
-</div>
+  </div>
+  <Footer/>
 </HashRouter>
 </>
     
